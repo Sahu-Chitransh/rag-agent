@@ -67,6 +67,10 @@ def api_transcribe():
     audio.save(path)
     transcript = transcribe_audio(path)
     return jsonify({'transcript': transcript})
+@app.route('/health')
+def health_check():
+    return "OK", 200
+
 
 if __name__ == '__main__':
     if not os.path.exists(UPLOAD_FOLDER):
