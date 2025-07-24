@@ -3,6 +3,8 @@ flask
 werkzeug
 python-dotenv
 requests
+gunicorn
+
 
 # Document Parsing
 openai
