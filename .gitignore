@@ -1,0 +1,50 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables
+.env
+
+# VSCode/JetBrains/IDE specific
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Uploads (optional: comment out if you want to track uploads)
+uploads/*
+
+# Log files
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# Compiled files
+*.so
+*.egg
+*.egg-info/
+
+# Backup files
+*.bak
+*.swp
+
+# Mac junk
+*.DS_Store
+
+# Static build (if you're generating one)
+build/
+dist/
+*.tar.gz
+
+# Node modules (if voice frontend uses npm packages)
+node_modules/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}RAG Agent{% endblock %}</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3159/3159076.png" type="image/png" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #e2eafc, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: 'Inter', sans-serif;
+      padding: 2rem 1rem;
+    }
+    .app-container {
+      background: white;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 960px;
+      animation: fadeIn 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 80vh;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1.2rem 2rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-bottom: 2px solid #397bd1;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      flex-grow: 1;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #eee;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header>RAG Document Assistant</header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      &copy; 2025 RAG Agent. Built for Autonomous Document Querying.
+    </footer>
+  </div>
+</body>
+</html>
+
+
+

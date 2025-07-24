@@ -1,0 +1,17 @@
+# Core Functionality
+flask
+werkzeug
+python-dotenv
+requests
+
+# Document Parsing
+openai
+pymupdf
+python-docx
+pillow
+pytesseract
+
+# Voice Input & Transcription (Full Stack)
+whisper
+torch
+ffmpeg-python
