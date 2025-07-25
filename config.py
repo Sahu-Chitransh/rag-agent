@@ -24,7 +24,7 @@ WHISPER_API_URL = "https://openrouter.ai/api/v1/audio/transcriptions"
 
 # LLM (chat/completion) API endpoint and model
 LLM_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-LLM_MODEL = "openai/gpt-3.5-turbo"    # or "openai/gpt-4", "anthropic/claude-3-haiku", etc.
+LLM_MODEL = "mistralai/mistral-7b-instruct"    # or "openai/gpt-4", "anthropic/claude-3-haiku", etc.
 
 # (Optional) maximum file size in bytes (e.g., 20MB)
 MAX_CONTENT_LENGTH = 20 * 1024 * 1024   # 20 MB
